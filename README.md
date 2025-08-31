@@ -8,6 +8,18 @@ PythonChatBot/
 
 │── .gitignore
 
+├── cli/
+
+│ ├── __init__.py
+
+│ ├── commands.py
+
+│ ├── completers.py
+
+│ ├── main.py
+
+│ └── utils.py
+
 │── src/
 
 │ ├── config.py
@@ -44,13 +56,29 @@ PythonChatBot/
 
 │ │ └── app.py
 
-│ └── discord_bot/
+│ ├── discord_bot/
 
-│ └── bot.py
+│ │ └── bot.py
 
 │── scripts/
 
-│ └── test_cerebras.py
+│ ├── clear_active_history.py
+
+│ ├── dump_archive.py
+
+│ ├── list_users.py
+
+│ ├── list_workspaces.py
+
+│ ├── merge_archive_active.py
+
+│ ├── view_conversation.py
+
+│ ├── test_cerebras.py
+
+│ ├── README.md
+
+│ └── CONTRIBUTING.md
 
 └── data/
 
@@ -59,5 +87,6 @@ PythonChatBot/
 ├── uploads/ # ingested files
 
 └── convos.db # sqlite for conversations
+
 
 
