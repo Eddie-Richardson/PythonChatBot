@@ -1,0 +1,99 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+*.zip
+*.tar.gz
+*.tgz
+
+# Virtualenv
+# Exclude the venv directory (replace 'venv' if you named yours differently)
+venv/
+.venv/
+ENV/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm
+# Covers JetBrains IDEs: IntelliJ, PyCharm, WebStorm, Android Studio, RubyMine, AppCode, CLion, GoLand, Rider, PhpStorm
+.idea/
+*.iml
+*.ipr
+*.iws
+shelf/ # For PyCharm's shelve feature
+# Mac specific PyCharm files (if on macOS)
+.DS_Store
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Secrets and sensitive files (add your own specific files if needed)
+ .env
+# config.ini
+
+# Flycheck
+.flycheck_*.el
+
+# mypy
+.mypy_cache/
+
+# pybuilder
+target/
+
+# Environments
+.env
+.flaskenv
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

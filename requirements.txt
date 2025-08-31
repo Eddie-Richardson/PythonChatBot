@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+requests
+beautifulsoup4
+trafilatura
+readability-lxml
+sentence-transformers
+chromadb
+numpy
+scikit-learn
+pydantic
+discord.py
+python-multipart
+pypdf
+python-docx
+tiktoken
