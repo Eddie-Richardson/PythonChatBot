@@ -48,6 +48,10 @@ PythonChatBot/
 
 │ └── bot.py
 
+│── scripts/
+
+│ └── test_cerebras.py
+
 └── data/
 
 ├── chroma/ # vector DB persistence
@@ -55,4 +59,5 @@ PythonChatBot/
 ├── uploads/ # ingested files
 
 └── convos.db # sqlite for conversations
+
 
