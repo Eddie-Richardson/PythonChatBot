@@ -1,5 +1,5 @@
 # src/memory/convo_store.py
-import sqlite3, json, time
+import sqlite3, time
 from typing import List, Dict
 from src.config import MEMORY_CONFIG
 from dotenv import load_dotenv
@@ -24,6 +24,17 @@ def get_history(workspace: str, user_id: str, limit: int = 30) -> List[Dict]:
     c = _conn()
     rows = c.execute("""SELECT role, content FROM messages
                         WHERE workspace=? AND user_id=?
-                        ORDER BY ts DESC LIMIT ?""", (workspace, user_id, limit)).fetchall()
+                        ORDER BY ts DESC LIMIT ?""",
+                     (workspace, user_id, limit)).fetchall()
     c.close()
     return [{"role": r[0], "content": r[1]} for r in rows[::-1]]
+
+def clear_history(workspace: str, user_id: str):
+    """
+    Remove all active conversation messages for a given workspace/user.
+    """
+    c = _conn()
+    c.execute("DELETE FROM messages WHERE workspace=? AND user_id=?",
+              (workspace, user_id))
+    c.commit(); c.close()
+
