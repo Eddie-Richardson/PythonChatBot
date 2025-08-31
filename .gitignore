@@ -18,7 +18,6 @@ venv/
 .venv/
 ENV/
 env/
-ENV/
 env.bak/
 venv.bak/
 
@@ -34,9 +33,7 @@ shelf/ # For PyCharm's shelve feature
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -73,7 +70,6 @@ coverage.xml
 .ipynb_checkpoints
 
 # Secrets and sensitive files (add your own specific files if needed)
- .env
 # config.ini
 
 # Flycheck
@@ -90,7 +86,6 @@ target/
 .flaskenv
 
 # OS generated files
-.DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
